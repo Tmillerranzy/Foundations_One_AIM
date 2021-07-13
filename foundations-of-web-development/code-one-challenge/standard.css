@@ -1,0 +1,15 @@
+nav a {
+background-color: blue;
+color: cyan;
+display: flex;
+margin: 1px;
+}
+
+
+content{
+    font-size: 14pt;
+}
+
+body p {
+    font-style: italic;
+}

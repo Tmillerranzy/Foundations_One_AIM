@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline block</title>
+    <style>
+        code {
+            background-color: #2bd34a;
+            border-radius: 6px;
+            color: #fff;
+            display: block;
+            font: 14px/24px "Courier New", monospace;
+            padding: 24px 15px;
+            text-align: center;
+        }
+        header,
+        section,
+        footer {
+            margin: 0 1.5% 24px 1.5%;
+        }
+        section {
+            display: inline-block;
+            margin: 0 1.5%;
+            width: 30%;
+        }
+        footer {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <code>&#60;header&#62;</code>
+    </header>
+    <section>
+        <code>&#60;section&#62; <br> inline-block;</code>
+    </section><!--
+    --><section>
+        <code>&#60;section&#62; <br> inline-block;</code>
+    </section><!--
+    --><section>
+        <code>&#60;section&#62; <br> inline-block;</code>
+    </section>
+    <footer> 
+        <code>&#60; footer&#62;</code>
+    </footer>
+</body>
+</html>
