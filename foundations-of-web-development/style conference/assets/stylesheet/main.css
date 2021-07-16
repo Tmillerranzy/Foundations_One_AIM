@@ -1,3 +1,10 @@
+
+body {
+    background: #11073fe3;
+    color: rgb(39, 58, 110);
+    font: 300 16px/22px "Lato", "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /*
 ==============================
 Grid
@@ -12,11 +19,7 @@ Grid
             box-sizing: border-box;
 }
 
-body {
-    background: #11073fe3;
-    color: rgb(39, 58, 110);
-    font: 300 16px/22px "Lato", "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 
 .container,
 .grid {
@@ -66,6 +69,27 @@ body {
 }
 
 /*
+  ========================================
+  clearfix
+  ========================================
+*/
+
+.group::before,
+.group::after {
+    content: "";
+    display: table;
+}
+
+.group::after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+/*
 ==============================
 Typography
 ==============================
@@ -102,6 +126,7 @@ h5 {
     color: #4568c9;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 strong {
@@ -127,6 +152,20 @@ a:hover {
     color: #a9b2b9
 }
 
+p a {
+    border-bottom: 1px solid #dfe2e5;
+}
+
+.primary-footer a:hover,
+.primary-header a:hover {
+    color:#fff;
+}
+
+.primary-footer a:hover,
+.primary-header a:hover {
+    color: #acb8d8;
+}
+
 /*
 ==============================
 Buttons
@@ -149,8 +188,9 @@ Buttons
     padding: 10px 30px;
 }
 
-.hero {
-    padding: 22px 80px 66px 80px;
+.blt-alt:hover {
+    background: #fff;
+    color: #668cc9;
 }
 
 /*
@@ -167,13 +207,19 @@ Primary Header
     padding-right: 1em;
 }
 
-.primary-header a{
-    color: #fff;
+.tagline {
+    margin: 66px 0 22px 0;
+    text-align: right;
 }
 
-.primary-header a:hover {
-    color: #a9b2b9;
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
+
+
 
 /*
 ==============================
@@ -184,6 +230,9 @@ Primary Footer
 .primary-footer{
     padding-bottom: 44px; 
     padding-top: 44px;
+    color: #6c89bd;
+    padding-top: 44px;
+
 }
 
 .primary-footer small {
@@ -191,13 +240,6 @@ Primary Footer
     font-weight: 400;
 }
 
-.primary-footer a{
-    color: #fff;
-}
-
-.primary-footer a:hover {
-    color: #a9b2b9;
-}
 
 /*
 ==============================
@@ -238,6 +280,7 @@ Home
 
 .hero p {
     font-size: 24px;
+    font-weight: 100;
 }
 
 .teaser a:hover h3 {
@@ -252,18 +295,12 @@ Rows
 
 .row {
     background: #fff;
-    min-width: 960px;
     padding: 66px 0 44px 0;
 }
 
 .row,
 .row-alt {
     min-width: 960px;
-}
-
-.row {
-    background: #fff;
-    padding: 66px 0 44px 0;
 }
 
 .row-alt {
@@ -288,6 +325,11 @@ Leads
     font-size: 21px;
     line-height: 33px;
 }
+/*
+==============================
+Speakers
+==============================
+*/
 
 .speakers-info {
     border: 1px solid #dfe2e5;
