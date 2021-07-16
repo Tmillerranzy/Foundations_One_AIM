@@ -146,6 +146,7 @@ Links
 
 a {
     color: #6c89db;
+    text-decoration: none;
 }
 
 a:hover {
@@ -156,8 +157,8 @@ p a {
     border-bottom: 1px solid #dfe2e5;
 }
 
-.primary-footer a:hover,
-.primary-header a:hover {
+.primary-footer,
+.primary-header {
     color:#fff;
 }
 
@@ -231,7 +232,7 @@ Primary Footer
     padding-bottom: 44px; 
     padding-top: 44px;
     color: #6c89bd;
-    padding-top: 44px;
+    font-size: 14px;
 
 }
 
@@ -305,9 +306,9 @@ Rows
 
 .row-alt {
     background: #cbe2c1;
-    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: -webkit-linear-gradient(to right, #8ea4cf, #b3d7e5);
+    background: -moz-linear-gradient(to right, #8ea4cf, #b3d7e5);
+    background: linear-gradient(to right, #8ea4cf, #b3d7e5);
     padding: 44px 0 22px 0;
 }
 
@@ -341,4 +342,8 @@ Speakers
 
 .speaker {
     margin-bottom: 44px;
+}
+
+.primary-header {
+
 }
