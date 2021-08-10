@@ -1,0 +1,50 @@
+html, body {
+    font-size: 3vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #000080;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+#mobile-nav {
+    display: none;
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+}
+
+#home {
+    margin-top: 2em;
+}
+
+.photobox {
+    display: flex;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.photobox img {
+    width: 40vw;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8em;
+}

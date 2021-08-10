@@ -1,0 +1,36 @@
+html, body {
+    font-size: 5vh;
+}
+
+#mobile-nav {
+    display: block;
+
+}
+
+#mobile-nav img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    flex-direction: column;
+    display: none;
+    left: 2vw;
+    top: calc(2vh + 1em);
+    width: 12ch;
+    overflow: hidden;
+    align-items: center;
+    transition: all .5s;
+}
+
+#nav:target {
+    display: flex;
+}
+
+.photobox {
+    flex-direction: column;
+}
+
+.photobox img {
+    width: 90vw;
+}
