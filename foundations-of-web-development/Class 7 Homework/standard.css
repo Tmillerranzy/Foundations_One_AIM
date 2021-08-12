@@ -7,32 +7,43 @@ html, body {
     background-color: rgba(255,255,255,0.8);
     padding: 0.5em;
     text-align: center;
+    grid-area: header;
 }
 .item2 {
     background-color: rgba(255,255,255,0.8);
     padding: 0.5em;
     text-align: center;
+    grid-area: left;
 }
 .item3 {
     background-color: rgba(255,255,255,0.8);
     padding: 0.5em;
     text-align: center;
+    grid-area: middle;
 }
 .item4 {
     background-color: rgba(255,255,255,0.8);
     padding: 0.5em;
     text-align: center;
+    grid-area: right;
 }
 .item5 {
     background-color: rgba(255,255,255,0.8);
     padding: 0.5em;
     text-align: center;
+    grid-area: footerleft;
+}
+.item6 {
+    background-color: rgba(255,255,255,0.8);
+    padding: 0.5em;
+    text-align: center;
+    grid-area: footerright;
 }
 .grid-container {
     display: grid;
-    grid-template-areas: "header header header header header header"
-                          "left left middle middle right right"
-                          "footerleft footer footer footer footer footerright" ;
+    grid-template-areas: "header header header header "
+                          "left  middle middle right"
+                          "footerleft footerleft footerright footerright" ;
     grid-gap: 0.25em;
     padding: 0.25em;
     background-color: #00a000;      
