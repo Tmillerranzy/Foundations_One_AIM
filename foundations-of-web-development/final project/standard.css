@@ -1,0 +1,31 @@
+body {
+    font-family: Indie Flower, Lato;
+    font-size: 1em;
+    background-image: url('images/SplitShire-2610.jpg');
+    
+}
+
+nav a {
+    position: relative;
+    font-size: 1.5em;
+    color: rgb(106, 93, 107);
+    top: 100%;
+    left: 50%;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color: rgb(169, 21, 199)
+}
+
+h1 {
+    text-align: center;
+    position:relative;
+    position: absolute;
+    right: 65%;
+    border-radius: 3em;
+    margin-bottom: 2em;
+    padding: 2px;
+    
+
+}
