@@ -21,6 +21,9 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
 
     //set currentSlide to first child
     var currentSlide = slides.first();
+    var currentSlideIndex = 1;
+
+    var autoPlay = null;
 
     //hide all slides except first and add active class to first
     slides.not(':first').css('display', 'none');
@@ -30,7 +33,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
     function fadeNext() {
         currentSlide.removeClass('active').fadeOut(700);
 
-        if (currentSlideIndex == slideCount) {
+        if (currentSlideIndex == slidesCount) {
             currentSlide = slides.first();
             currentSlide.delay(500).addClass('active').fadeIn(700);
             currentSlideIndex = 1;
@@ -56,15 +59,18 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
             currentSlide = currentSlide.prev();
             currentSlide.delay(500).addClass('active').fadeIn(700);
         }
-        pager.text(currentlSlideIndex + ' / ' + slidesCount);
+        pager.text(currentSlideIndex + ' / ' + slidesCount);
     }
 
     //function that starts the autoplay and resets
     function AutoPlay() {
         clearInterval(autoPlay);
 
-        if (auto == true);
-            autoPlay = setInterval(function() { fadeNext() }, pause);
+        if (auto == true) {
+            autoPlay = setInterval(function() {
+                 fadeNext() 
+            }, pause);
+        }
     }
 
     //detect if user clicked on arrow for next sldie and fade slide if it did
@@ -78,7 +84,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
         $(prevSlide).click(function(e) {
             e.preventDefault();
             fadePrev();
-            autoPlay();
+            AutoPlay();
         });
 
         // start autoplay if auto is set to true
