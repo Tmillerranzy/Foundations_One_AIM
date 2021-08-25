@@ -49,7 +49,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
 
         if (currentSlideIndex == 1) {
             currentSlide = slides.last();
-            currentSlide.delay(500).addClass('active').fadeIn();
+            currentSlide.delay(500).addClass('active').fadeIn(700);
             currentSlideIndex = slidesCount;
         } else {
             currentSlidesIndex--;
@@ -95,4 +95,3 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
 
 
 
-}
