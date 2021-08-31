@@ -1,0 +1,83 @@
+#mobile-menu {
+    display: block;
+    position: fixed;
+    right: 2vw;
+    top: 0.5em;
+    font-size: 2rem;
+    color: white;
+
+}
+
+
+ nav{
+    font-size: 1em;
+    flex-direction: column;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    display: flex;
+    top: 3em;
+    right: 2vw;
+    width: 0;
+    height: 0;
+
+}
+
+nav > a {
+    margin: 0 !important;
+    line-height: 1em !important;
+    padding: 0.5em;
+}
+
+.show {
+    height: auto;
+    width: auto;
+}
+
+
+h1 {
+    flex-direction: column;
+
+}
+
+
+
+main {
+    font-size: 2vh;
+    white-space: normal;
+}
+main h1 {
+    width: 22ch;
+    white-space: normal;
+}
+
+
+
+main a {
+    position: relative;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-shadow: 2px 2px 2px black;
+    border-width: 0;
+    padding-top: calc(0.5em + 3px);
+    padding-bottom: calc(0.5em + 3px);
+    width: calc(20ch + 5px);
+    background: linear-gradient(90deg, blue, lightblue, turquoise);
+}
+
+.teaser {
+    flex-direction: column;
+    top: calc(100vh - 4em);
+    transform: translate(-50%, 0);
+    width: 90%;
+}
+
+.teaser > div::after {
+    border: 0 !important;
+}
+
+.teaser h2 {
+    white-space: nowrap;
+}
+    
