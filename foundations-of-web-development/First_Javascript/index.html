@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JavaScript</title>
+</head>
+<body>
+    <h1>First JavaScript</h1>
+    <script>
+        var total= 0;
+        total = total + 2;
+        total += 3;
+        total++;
+        console.log("total is " + total);
+
+        var housePrice = "400000";
+        /* 1. if statement with no other parts*/
+        /*if (something is true) {
+            take this action
+        }*/ 
+        /* if consition is not true, nothing happens*/
+        if (housePrice < 300000) {
+            console.log("we can afford this house!");
+        }
+
+        /* 2. if-else statement 
+        if (something is true) {
+            take this action 
+        } else {
+            take this other action
+        }*/
+        var weather  = "rainy";
+        if (weather == "rainy") {
+            console.log("take an umbrella");
+        }else {
+            console.log("you don't need an umbrella!");
+        }
+
+        var grade = 83;
+        if (grade >= 90) {
+            console.log("you got an A!");
+        }else if (grade >= 80) {
+            console.log("you got a B");
+        } else if (grade >= 70) {
+            console.log("you got a C");
+        }
+
+
+        var carrot = "^";
+        console.log(carrot);
+        for (var i = 0; i < 10; i ++) {
+            carrot += "^";
+            console.log(carrot);
+        }
+        for (var i = 2; i <= 20; i+=2) {
+            console.log("i is " + i);
+        }
+        for (var i = 19; i >= 0; i--) {
+            console.log("i is " + i);
+        }
+        var k = 0;
+        while (k <= 10) {
+            console.log("k is " + k)
+            k += 3;
+        }
+        console.log("while loop with m started");
+        var m= 30;
+        while (m <= 20) {
+            console.log("m is " + m);
+            m += 3;
+        }
+        console.log("while loop with m ended");
+
+        console.log("do-while loop with n started");
+        var n = 30;
+        do {
+            console.log("n is " + n);
+        } while (n <= 20);
+        console.log("do-while loop with n ended");
+        
+        function addTwoNumbers() {
+            console.log("2 plus 3 equals" + (2+3));
+        }
+        addTwoNumbers();
+
+        function multiplyTwoNumbers(num1, num2) {
+            console.log("The product is " + (num1 * num2));
+        }
+
+        multiplyTwoNumbers(5, 6);
+
+        multiplyTwoNumbers(2, 9);
+
+
+        var x = 2;
+         function increaseXByFour() {
+             var x = 1;
+             x = x + 4;
+            console.log(x);    
+             }
+
+             console.log(x);
+             increaseXByFour();
+             console.log(x);
+
+             var y = 2;
+
+             function increaseYByFour() {
+                 y = 1;
+                 y = y + 4;
+                 console.log(y);
+             }
+
+             console.log(y);
+             increaseYByFour();
+             console.log(y);
+        
+    </script>
+</body>
+</html>
