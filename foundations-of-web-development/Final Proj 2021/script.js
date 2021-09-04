@@ -5,4 +5,7 @@ $(document).ready(function(){
 
     });
 
+    $('#menu').removeClass('fa-times');
+    $('header').removeClass('toggle');
+
 });

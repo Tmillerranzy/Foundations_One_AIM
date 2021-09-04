@@ -90,11 +90,37 @@ header .navbar ul li a:hover {
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 750px) {
+    
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 970px){
+    header {
+        left: 120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+}
+
+
+@media (max-width: 900px) {
     
     html {
         font-size: 55%;
     }
 }
+
+@media (max-width: 400px){
+    header {
+        width: 100vw;
+    }
+   
 
 
